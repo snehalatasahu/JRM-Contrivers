@@ -241,19 +241,16 @@ function updateit(id){
   var form_descrip = $("#"+id+" #descrip").val()
   var form_cover =   $("#"+id+" .changeit").attr("src")
   var form_gallery = []
-  var form_gallery_name = []
   var checker = $("#showdesign"+id).prop("checked")
   var form_esteemed = $("#"+id+" #esteem").prop("checked")
   $("#"+id+" .gallery img").each(function(){
     form_gallery.push($(this).attr("src"));
-    form_gallery_name.push($(this).attr("id"));
   })
   db.collection("projects").doc(id).update({
       "name" : form_name,
       "descrip" : form_descrip,
       "cover": form_cover,
       "gallery": form_gallery,
-      "gallery_name": form_gallery_name,
       "esteemed": form_esteemed,
       "showit":checker,
   }).then(function() {
