@@ -52,7 +52,7 @@ function renderdata(doc) {
   `
     $('.my-gallery').append(show);
 }
-  
+// lala
 db.collection("projects").orderBy("name","asc").get().then((snapshot) => {
     snapshot.docs.forEach((doc) =>{
         renderdata(doc);
