@@ -110,7 +110,7 @@ function rel_app() {
   } else if(related.length > 7){
     while (related.length > 7) {
       related.pop();
-      if (related.length == 7){rel_app()}
+      if (related.length == 7){rel_app();break;};
     }
   }
 
