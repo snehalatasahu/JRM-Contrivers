@@ -80,7 +80,7 @@ function sortit(){
 } 
  function sortby(sorter){
 	 $('.my-gallery .gallery-pics').css("display","none");
-	 $("#heading").text(sorter.toUpperCase());
+	 $("#heading").text(sorter.toUpperCase().replace(/_/g,' '));
 	 sabsorted[sorter].forEach(e =>{
 	 	$("#"+e).css("display","grid");
 	 })
