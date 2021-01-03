@@ -68,6 +68,7 @@ body{background-color:rgba(255, 244, 225,0.3);}
 }
 .carousel-item{
     overflow: hidden;
+    height: 70vh; 
 }
 .carousel-item img{filter: brightness(68%);height: 100%;overflow-x: hidden;}
 .carousel-caption .dabba{

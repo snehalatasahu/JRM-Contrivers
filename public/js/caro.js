@@ -1,4 +1,4 @@
-$(".carousel-item").css({"height":screen.availHeight.toString()+'px' })
+// $(".carousel-item").css({"height":screen.availHeight.toString()+'px' })
 // $(".carousel-item img").css({"height":screen.availHeight.toString()+'px' })
   $(document).ready(function(){
     $('.sidenav').sidenav();
